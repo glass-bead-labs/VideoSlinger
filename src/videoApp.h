@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 
-class ofApp : 
+class videoApp : 
 	public ofBaseApp
 {
 	public:

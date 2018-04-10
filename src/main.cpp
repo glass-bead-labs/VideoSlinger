@@ -1,5 +1,5 @@
 #include "ofMain.h"
-#include "ofApp.h"
+#include "videoApp.h"
 #include "guiApp.h"
 
 //========================================================================
@@ -13,7 +13,7 @@ int main( ){
 	settings.height = 720;
 	settings.setPosition(ofVec2f(400, 100));
 	auto mainWindow = ofCreateWindow(settings);
-	auto mainApp = make_shared<ofApp>();
+	auto mainApp = make_shared<videoApp>();
 	ofRunApp(mainWindow, mainApp);
 
 	// A smaller window for GUI

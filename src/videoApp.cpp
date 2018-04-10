@@ -1,71 +1,71 @@
-#include "ofApp.h"
+#include "videoApp.h"
 
 //--------------------------------------------------------------
-void ofApp::setup(){
+void videoApp::setup(){
 	cam.setup(1280, 720);
 }
 
 //--------------------------------------------------------------
-void ofApp::update(){
+void videoApp::update(){
 	cam.update();
 }
 
 //--------------------------------------------------------------
-void ofApp::draw(){
+void videoApp::draw(){
 	cam.draw(0,0);
 }
 
 //--------------------------------------------------------------
-void ofApp::keyPressed(int key){
+void videoApp::keyPressed(int key){
 
 }
 
 //--------------------------------------------------------------
-void ofApp::keyReleased(int key){
+void videoApp::keyReleased(int key){
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y ){
+void videoApp::mouseMoved(int x, int y ){
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
+void videoApp::mouseDragged(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button){
+void videoApp::mousePressed(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
+void videoApp::mouseReleased(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseEntered(int x, int y){
+void videoApp::mouseEntered(int x, int y){
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseExited(int x, int y){
+void videoApp::mouseExited(int x, int y){
 
 }
 
 //--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
+void videoApp::windowResized(int w, int h){
 
 }
 
 //--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
+void videoApp::gotMessage(ofMessage msg){
 
 }
 
 //--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
+void videoApp::dragEvent(ofDragInfo dragInfo){ 
 
 }
