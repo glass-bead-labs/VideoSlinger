@@ -18,7 +18,7 @@ void guiApp::setup() {
 	// gui.add(ringButton.setup("ring"));
 	// gui.add(screenSize.setup("screen size", ofToString(ofGetWidth()) + "x" + ofToString(ofGetHeight())));
 	
-	gui.add(playPause.setup("Play / Pause"));
+	gui.add(playPause.setup("Play"));
 
 	// bHide = false;
 
@@ -31,5 +31,22 @@ void guiApp::update()
 
 void guiApp::draw()
 {
+	gui.draw();
 }
 
+// Code for listing webcam resolutions, from:
+// https://forum.openframeworks.cc/t/list-available-webcam-resolutions/28420/2
+
+/*
+auto devs = webcam.listDevices();
+for(auto & d : devs) {
+std::cout << d.id << ": " << d.deviceName << " // " <<
+d.formats.size() << " formats" << std::endl;
+for(auto & f : d.formats) {
+std::cout << "  " << f.width << "x" << f.height << std::endl;
+for(auto & fps : f.framerates) {
+std::cout << "    " << fps << std::endl;
+}
+}
+}
+*/
