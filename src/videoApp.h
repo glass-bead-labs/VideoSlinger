@@ -23,4 +23,5 @@ class videoApp :
 		void gotMessage(ofMessage msg);
 		
 	ofVideoGrabber cam;
+	ofVideoPlayer vid_file;
 };

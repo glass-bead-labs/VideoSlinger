@@ -1,0 +1,3 @@
+This project is mostly an exploration for figuring out how to work with video (files and cameras) using OpenFrameworks. For now the focus is totally on Windows / VS 2015 CE.
+
+The project requires video codecs. I installed the recommended K-Lite codecs with choco: `cinst k-litecodecpackfull`. I'm not yet clear whether this is needed for running, or just compilation. Oh the joys of developing on Windows!

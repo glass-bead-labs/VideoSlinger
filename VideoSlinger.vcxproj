@@ -171,8 +171,8 @@
     <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\guiApp.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\guiApp.cpp" />
     <ClCompile Include="src\videoApp.cpp" />
     <ClCompile Include="..\..\..\addons\ofxGui\src\ofxBaseGui.cpp" />
     <ClCompile Include="..\..\..\addons\ofxGui\src\ofxButton.cpp" />

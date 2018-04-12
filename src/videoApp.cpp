@@ -2,17 +2,46 @@
 
 //--------------------------------------------------------------
 void videoApp::setup(){
-	cam.setup(1280, 720);
+	// This is the bin directory running from VS
+	// cout << ofFilePath::getCurrentWorkingDirectory();
+	
+	//Open the Open File Dialog
+	ofFileDialogResult openFileResult = ofSystemLoadDialog("Select a video file");
+
+	//Check if the user opened a file
+	if (openFileResult.bSuccess) {
+
+		ofLogVerbose("You selected a file");
+
+		//We have a file, check it and process it
+		// processOpenFileSelection(openFileResult);
+
+		// Interestingly, this does not load relative to the above (at least when run directly from VS), it looks in <application root>/bin/data
+		// vid_file.load("curr.mp4");
+
+		// Hopefully we don't have to worry about it if it's an absolute path
+		vid_file.load(openFileResult.getPath());
+		vid_file.play();
+	}
+	else {
+		ofLogVerbose("You hit cancel");
+	}
+
+
+	// There are also cam calls in update and draw for re-enabling stuff
+	// cam.setup(1280, 720);
 }
 
 //--------------------------------------------------------------
 void videoApp::update(){
-	cam.update();
+	vid_file.update();
+	// cam.update();
 }
 
 //--------------------------------------------------------------
 void videoApp::draw(){
-	cam.draw(0,0);
+	vid_file.draw(0, 0);
+	// cam.draw(0,0);
 }
 
 //--------------------------------------------------------------
